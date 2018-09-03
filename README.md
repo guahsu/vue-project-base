@@ -19,7 +19,7 @@
 ? Should we run `npm install` for you after the project has been created? (recommended) npm
 ```
 
-### Step3: 安裝專案會使用到的套件們  
+### Step3: 安裝專案會使用到的套件們
   1. elementUI: `npm i element-ui -save`  
 	2. Lodash.js: `npm i lodash --save`  
 	3. Moment.js `npm i moment --save`  
@@ -31,7 +31,7 @@
   9. **統一上面指令：**：  
 ```
 npm install element-ui lodash moment normalize.css vuex es6-promise sass sass-loader node-sass @fortawesome/fontawesome @fortawesome/fontawesome-free-brands @fortawesome/fontawesome-free-regular @fortawesome/fontawesome-free-solid  --save
-```
+```  
   10. `npm install`
 	
 ### Step4: 設定套件到專案內
@@ -100,12 +100,8 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 ### Step7: 設定Vuex相關資料
   1. 建立types檔案 `src/store/mutation-types.js`
 ```javascript
-const rootTypes = {
+export const rootTypes = {
   SET_USER_NAME: 'SET_USER_NAME'
-}
-
-module.exports = {
-  rootTypes
 }
 ```
   2. 建立modules資料夾`src/store/modules`
@@ -278,14 +274,14 @@ export default {
 </style>
 ```
 
-### Step12: 安裝lint & standard相關工具
+### Step11: 安裝lint & standard相關工具
   1. `npm i eslint -g`
   2. `npm i standard -g`
-  3. `npm i slint-plugin-html@3.2.2 -g e`
-  4. `npm install standard standard-loader --save-dev`
+  3. `npm i eslint-plugin-html@3.2.2 -g e`
+  4. `npm i standard-loader --save-dev`
   5. autoFix指令(.js/.vue): `standard --plugin html '**/*.{js,vue}' --fix`
 
-### Step11: Git
+### Step12: Git
   1. `git init`
   2. `git add .`
   3. `git commit -m "project init"`

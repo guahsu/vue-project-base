@@ -98,7 +98,7 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
   4. 建立 `src/styles`，這裏存放scss相關設定 -> Step8
 
 ### Step7: 設定Vuex相關資料
-	1. 建立types檔案 `src/store/mutation-types.js`
+  1. 建立types檔案 `src/store/mutation-types.js`
 ```javascript
 const rootTypes = {
   SET_USER_NAME: 'SET_USER_NAME'
@@ -108,8 +108,8 @@ module.exports = {
   rootTypes
 }
 ```
-  3. 建立modules資料夾`src/store/modules`
-  4. 建立root檔案`src/store/modules/root.js`
+  2. 建立modules資料夾`src/store/modules`
+  3. 建立root檔案`src/store/modules/root.js`
 ```javascript
 import { rootTypes } from '@/store/mutation-types'
 
@@ -141,7 +141,7 @@ export default {
   mutations
 }
 ```
-	4. 建立index檔案`src/store/index.js`
+  4. 建立index檔案`src/store/index.js`
 ```javascript
 import Vue from 'vue'
 import Vuex from 'vuex'
